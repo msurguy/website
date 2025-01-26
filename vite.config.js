@@ -5,7 +5,7 @@ import { resolve } from 'path';
 import tailwindcss from "tailwindcss";
 
 // Optionally load data from an external file or an API
-// Example: import siteData from './src/data/siteData.js';
+import artData from './src/data.js';
 
 export default defineConfig({
   plugins: [
@@ -14,7 +14,7 @@ export default defineConfig({
       partialDirectory: resolve(__dirname, 'src/partials'),
 
       // Optional: Provide data or helpers
-      // context: siteData,
+      context: { artData },
     }),
   ],
   css: {
@@ -24,7 +24,7 @@ export default defineConfig({
   },
   // You can tweak build output directory here if desired:
   build: {
-    outDir: 'dist'
+    outDir: 'docs'
   },
 
   // For GitHub pages with a custom base path, you might need:
