@@ -1,0 +1,20 @@
+<section class="py-10 md:py-16">
+
+  <div class="container max-w-4xl mx-auto px-4">
+
+    <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Art</h1>
+
+    <p class="font-normal text-gray-500 text-xs md:text-base mb-10">Maks is a digital artist and plotter enthusiast.
+      He creates generative artworks that often come in digital and physical
+      form. His artworks are often inspired by nature and are produced through heavy use of mathematics and coding.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      {{#each artData}}
+        {{> art-item}}
+      {{/each}}
+    </div>
+
+  </div>
+
+</section>
