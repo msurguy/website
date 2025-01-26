@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-svg {
+  position: absolute;
+  display: none;
+  top: 0;
+  z-index: -1;
+  width: 160px;
+}
+
+@media (min-width: 768px) {
+  .bg-svg {
+    display: inline;
+    width: 360px;
+  }
+}
